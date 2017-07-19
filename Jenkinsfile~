@@ -15,7 +15,7 @@ pipeline {
          // Run the gradle build
          steps {
             sh 'echo hi'
-            gbuild '-x test build'
+            mailUser "bcl@nclasters.org", "OK"
          }
       }
    }
