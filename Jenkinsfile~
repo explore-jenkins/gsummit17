@@ -9,7 +9,7 @@ pipeline {
          steps {
             step([$class: 'WsCleanup'])
             checkout scm
-            stash name: 'test-sources', includes: 'api/**, dataaccess/**,  util/**, build.gradle, settings.gradle'
+            stash name: 'test-sources', includes: 'api/**, dataaccess/**,  util/**, build.gradle' settings.gradle
        }
     }
     stage('Build') {
