@@ -11,13 +11,7 @@ pipeline {
 	    stash name: 'test-sources', includes: 'api/**, dataaccess/**,  util/**, build.gradle, settings.gradle'
          }
       }
-      stage('Build') {
-         // Run the gradle build
-         steps {
-            // gbuild '-x test build'
-	    sh 'echo hi'	
-         }
-      }
+      
    }
 }
 
