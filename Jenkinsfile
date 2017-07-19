@@ -44,11 +44,11 @@ pipeline {
        }
        failure{
           echo "Build failed"
-          mail body: 'build failed', subject: 'Build failed!', to: '<your email address>'
+         // mail body: 'build failed', subject: 'Build failed!', to: '<your email address>'
        }
        success {
            echo "Build succeeded"
-           mail body: 'build succeeded', subject: 'Build Succeeded', to: '<your email address>'
+          // mail body: 'build succeeded', subject: 'Build Succeeded', to: '<your email address>'
       }
    }
 } // end pipeline
