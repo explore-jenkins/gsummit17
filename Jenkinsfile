@@ -14,8 +14,7 @@ pipeline {
       stage('Build') {
          // Run the gradle build
          steps {
-            // gbuild '-x test build'
-	    sh 'echo hi'	
+            sh 'echo hi'	
          }
       }
    }
