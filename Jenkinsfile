@@ -7,16 +7,10 @@ pipeline {
    stages {
       stage('Source') {
          steps {
-            checkout scm
-	    stash name: 'test-sources', includes: 'api/**, dataaccess/**,  util/**, build.gradle, settings.gradle'
+            checkout scm	   
          }
       }
-      stage('Build') {
-         // Run the gradle build
-         steps {
-            sh 'echo hi'	
-         }
-      }
+      
    }
 }
 
